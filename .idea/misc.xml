@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/plus_parent/pom.xml" />
+        <option value="$PROJECT_DIR$/plus_common/pom.xml" />
+        <option value="$PROJECT_DIR$/plus_log/pom.xml" />
+        <option value="$PROJECT_DIR$/../../xxl-job/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../../xxl-job/pom.xml" />
+        <option value="$PROJECT_DIR$/../../xxl-job/xxl-job-admin/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

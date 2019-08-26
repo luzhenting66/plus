@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "spring.redis",
+      "type": "cn.pipilu.plus.common.config.RedisProperties",
+      "sourceType": "cn.pipilu.plus.common.config.RedisProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.redis.host",
+      "type": "java.lang.String",
+      "sourceType": "cn.pipilu.plus.common.config.RedisProperties"
+    },
+    {
+      "name": "spring.redis.password",
+      "type": "java.lang.String",
+      "sourceType": "cn.pipilu.plus.common.config.RedisProperties"
+    },
+    {
+      "name": "spring.redis.port",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.pipilu.plus.common.config.RedisProperties",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}
