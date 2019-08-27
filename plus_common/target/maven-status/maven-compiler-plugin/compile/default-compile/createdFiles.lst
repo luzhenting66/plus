@@ -5,6 +5,7 @@ cn\pipilu\plus\common\validate\RegexUtils.class
 cn\pipilu\plus\common\exception\AppException.class
 cn\pipilu\plus\common\util\IdUtils.class
 cn\pipilu\plus\common\util\ResponseUtil.class
+cn\pipilu\plus\common\base\entity\BusinessEntity.class
 cn\pipilu\plus\common\util\ValidateUtil.class
 cn\pipilu\plus\common\exception\SysException.class
 cn\pipilu\plus\common\util\RedisUtil.class
