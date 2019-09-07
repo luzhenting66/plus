@@ -13,11 +13,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-@Component
 public class ResponseUtil {
     protected static Logger logger = LoggerFactory.getLogger(ResponseUtil.class);
 
-    public  void setRespParam(Response resp, Exception e) {
+    public static void setRespParam(Response resp, Exception e) {
         resp.setRespTime(new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS").format(new Date()));
         if (e instanceof AppException) {
             AppException exce = (AppException) e;
@@ -36,7 +35,7 @@ public class ResponseUtil {
             resp.setResultMsg(ResultCode.SYSTEM_ERROR.lable);
         }
     }
-    public void setRespParam(Response resp) {
+    public static void setRespParam(Response resp) {
         resp.setRespTime(new SimpleDateFormat("yyyy/MM/dd-HH:mm:ss:SSS").format(new Date()));
         resp.setResultCode(ResultCode.SUCCESS.code);
         resp.setResultMsg(ResultCode.SUCCESS.lable);
