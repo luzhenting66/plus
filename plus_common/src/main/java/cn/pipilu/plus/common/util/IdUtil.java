@@ -8,8 +8,8 @@ import java.lang.management.ManagementFactory;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 @Component
-public class IdUtils {
-    private static final Logger logger = LoggerFactory.getLogger(IdUtils.class);
+public class IdUtil {
+    private static final Logger logger = LoggerFactory.getLogger(IdUtil.class);
     // 时间起始标记点，作为基准，一般取系统的最近时间（一旦确定不能变动）
     private final static long twepoch = 1288834974657L;
     // 机器标识位数
@@ -39,7 +39,7 @@ public class IdUtils {
     // 数据标识id部分
     private final long datacenterId;
 
-    public IdUtils(){
+    public IdUtil(){
         this.datacenterId = getDatacenterId(maxDatacenterId);
         this.workerId = getMaxWorkerId(datacenterId, maxWorkerId);
     }
@@ -49,7 +49,7 @@ public class IdUtils {
      * @param datacenterId
      *            序列号
      */
-    public IdUtils(long workerId, long datacenterId) {
+    public IdUtil(long workerId, long datacenterId) {
         if (workerId > maxWorkerId || workerId < 0) {
             throw new IllegalArgumentException(String.format("worker Id can't be greater than %d or less than 0", maxWorkerId));
         }
