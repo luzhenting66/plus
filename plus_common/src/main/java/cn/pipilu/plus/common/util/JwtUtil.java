@@ -6,12 +6,14 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
 
 @ConfigurationProperties("spring.jwt.config")
 @Data
+@Component
 public class JwtUtil {
 
     private String key ;
