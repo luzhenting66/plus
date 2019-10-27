@@ -11,7 +11,6 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import java.time.Duration;
 
 @Configuration
-
 public class CacheConfig extends CachingConfigurerSupport {
     @Bean
     public CacheManager cacheManager(RedisConnectionFactory connectionFactory) {
@@ -23,4 +22,5 @@ public class CacheConfig extends CachingConfigurerSupport {
                 .transactionAware()
                 .build();
     }
+
 }
